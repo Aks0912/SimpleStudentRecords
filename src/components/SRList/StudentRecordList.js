@@ -12,8 +12,7 @@ const StudentRecordList = () => {
     const [openPopup, setOpenPopup] = useState(false);    
     const [confirmDialog, setConfirmDialog] = useState({ isOpen:false, title:'', subTitle:''});
     const [studentRecordForEdit, setStudentRecordForEdit] = useState(null);
-    const [newRecordAdded, setNewRecordAdded] = useState(false);
-
+    
     const openInPopup = (item) => {      
         setStudentRecordForEdit(item)
         setOpenPopup(true)

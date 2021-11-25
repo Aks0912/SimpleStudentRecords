@@ -17,9 +17,11 @@ const useStyles = makeStyles(theme => ({
 
 const StudentRecordPage = () => {
     const classes = useStyles();
+    const [newRecordAdded, setNewRecordAdded] = useState(false);
 
     const saveStudentRecordHandler = (studentRecord) => {
         services.insertStudentRecord(studentRecord);
+        setNewRecordAdded(true)
     }
 
     return(
